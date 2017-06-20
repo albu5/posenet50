@@ -69,7 +69,7 @@ def get_pose_batch_test(img_list, height, width, n_classes=8):
 pose_resnet = load_model(model_path)
 
 # change this list to the image files you want to test
-img_paths = ['some_guy.jpg']
+img_paths = ['some_guy.jpg',]
 
 X = get_pose_batch_test(img_paths, 224, 224)
 Y = pose_resnet.predict(X, batch_size=batch_size)
